@@ -1,0 +1,35 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+.hydration-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.round-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4fc3f7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.round-button:hover {
+    background-color: #29b6f6;
+}

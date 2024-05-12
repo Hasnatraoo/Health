@@ -1,0 +1,80 @@
+/* Base styles for body to ensure full height and proper display */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #76b852, #8DC26F); /* Green gradient for a fresh look */
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Added margin around the header */
+}
+
+/* Navigation bar styling */
+nav {
+    position: relative; /* Changed from absolute to better adapt to padding changes */
+    width: 100%; /* Ensure nav spans the full width of the header */
+    text-align: right; /* Align nav items to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Inline display for a horizontal nav */
+    margin-right: 20px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    background-color: #fdd7ac; /* Maintained beach color */
+    color: #555;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px; /* More pronounced rounded corners */
+    transition: background-color 0.2s; /* Smoother transition */
+}
+
+nav ul li a:hover {
+    background-color: #fcba82;
+    color: #ffffff; /* Text color changes on hover */
+}
+
+/* Product list styling adjustments */
+.list-group-item {
+    background-color: #8B4513; /* Dark brown background */
+    color: white;
+    text-align: center;
+    border-radius: 50px; 
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    display: block;
+    width: 80%; /* Adjusted width for better visual balance */
+    transition: transform 0.3s; /* Transform effect on hover */
+}
+
+.list-group-item:hover {
+    background-color: #A0522D;
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+.nutrition-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    animation: rotateImage 20s infinite linear;
+}
+
+

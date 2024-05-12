@@ -1,0 +1,46 @@
+/* Makes size of text on the form larger than usual for stylistic purposes */
+body {
+    font-size: large;
+}
+
+/* Centers the img element in this container */
+#image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: fit-content;
+}
+
+/* Affects spacing of results and form */
+.resultScreen {
+    padding-top: 3vh;
+}
+
+/* Controls image size to fit the page */
+img {
+    height: 300px;
+    max-width: 600px;
+}
+
+#graphButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#storageStuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Changes the size of the image when it exceeds the screen size */
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    img {
+        height: 100%;
+        max-width: 100%;
+    }
+  }
+
+  
