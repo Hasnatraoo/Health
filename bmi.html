@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Lifestyle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bmi.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <!-- Navigation bar and page heading-->
+    <header>
+        <H1>Welcome to BMI Checker</H1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="image">
+        <img src="images/Bmi-chart.png" alt="bmi chart">
+    </div>
+
+    <main>
+        <form class="form">
+            <fieldset>
+                <legend>Calculate BMI:</legend>
+                <input id="ft" class="foot" type="number" min="1" max="10" name="foot">
+                <label for="ft">ft</label>
+                <input id="in" class="inch" type="number" min="0" max="11" name="inch">
+                <label for="in">in</label>
+                <br><br>
+                Weight:
+                <input id="pounds" class="weight" type="number" min="1" max="1000" name="weight">
+                <label for="pounds">pounds</label>
+                <br><br>
+                <button type="submit">See Results</button><br>
+            </fieldset>
+        </form>
+        <br>
+        <p class="resultScreen"></p>
+    </main>
+
+    <!-- Contact Information -->
+    <footer>
+        <div id="contacts">
+            <p>If you experience any difficulties with website
+            <br>CONTACT:</p>
+            <a href="mailto:munawahx.jmu.edu"><strong>Hasnat</strong></a>
+        </div>
+    </footer>
+
+    <!-- Link to .js file that makes the form functional -->
+    <script src="script/bmi.js"></script>
+</body>
+</html>
